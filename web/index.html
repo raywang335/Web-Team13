@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Beats Space</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2114082_54muguzg77n.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body style="overflow-y: hidden; width: 100vm; height: 100vh; background-color: #000">
+    <div>
+        <img src="images/logo_full.gif" id="mypic" onclick="himg()" style="position:absolute;top: 0;bottom:0;left:0;right:0;margin:auto;width: 100%;">
+    </div>
+
+    <div class="container" style="display: none">
+        <div class="to-virtual">
+            <div class="nav-vir">
+                <a href="html/vitualization.html">
+                    <p>音<br>乐<br>可<br>视<br>化<br><i class="iconfont iconback"></i></p>
+                </a>
+            </div>
+        </div>
+        <div class="square">
+            <div class="content">
+                <span></span>
+                <span></span>
+                <span></span>
+                <div class="textregion">
+                    <img src="images/logo_v3.gif" alt="logo" class="logo" style="width: 240px;padding-top: 25px;">
+
+                    <p class="introduction" style="word-break: break-word">We're a passionate team that loves and enjoys music. We keep working hard to build quality music visualizations and provide more visual feasts for music lovers!</p>
+                </div>
+                <!--        <a href="#">Read More</a>-->
+            </div>
+        </div>
+        <div class="to-style">
+            <div class="nav-sty">
+                <a href="html/stylized.html">
+                    <p>音<br>乐<br>风<br>格<br>化<br><i class="iconfont iconright"></i></p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('div.container').hide();
+        function himg() {
+            $('div.container').fadeIn('slow');
+            $('#mypic').fadeOut("slow")
+        }
+    </script>
+</body>
+
+</html>
